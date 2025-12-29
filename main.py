@@ -1,6 +1,15 @@
 def hidden(matrix, n):
-    # Your implementation here!
-    pass
+    quote = []
+    position = 0
+    for row in matrix:
+        for letter in row:
+            if position % n == 0:
+                quote.append(letter)
+            position +=1
+    return "".join(quote)
+
+
+    
 
 matrix_1 = (
     ('u','e','r','e', ' ', 'e'),
